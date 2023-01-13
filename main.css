@@ -1,0 +1,190 @@
+.libraries {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -45px;
+    background-color: rgba(227, 202, 215, 1);
+    border: dotted white 2px;
+    padding-top: 1em;
+    width: 750px;
+
+}
+
+.fav-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: dotted white 2px;
+    width: 350px;
+    height: 100%;
+    padding: 1em;
+    padding-left: 3em;
+    background-color: rgba(227, 202, 215, 1);
+    position:relative;
+    right: -45px;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 5em;
+}
+
+.library-name {
+    text-align: center;
+    font-size: 3em;
+    padding: em;
+    margin-top: 2em;
+    margin-bottom:1em;
+}
+
+.search-sort {
+    position: relative;
+    top: 20px;
+}
+
+body {
+    background-image: url("colorfulbooks.jpg");
+    background-repeat: repeat;
+    background-color: #cccccc;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: rgba(227, 202, 215, 0.9);
+    background-image: radial-gradient(circle, rgba(227,202,215,0.4) 0%, rgba(47,174,255,0.4) 60%, rgba(252,70,107,.4) 92%, rgba(252,70,107,1) 100%);
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    overflow-y: scroll
+}
+
+header {
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(100, 149, 237);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: solid black 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+footer {
+    height: 45px;
+    width: 100vw;
+    background-color: rgb(100, 149, 237);
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid black 2px;
+    position: fixed;
+    bottom: 0;
+    font-style: italic;
+}
+
+a {
+    padding: 2em;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.home {
+    font-weight: bold;
+}
+
+.new-book {
+    padding-bottom: 1.7em;
+}
+
+.library-section {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 3em;
+}
+
+hr {
+    width: 1265px;
+    border-top: solid white .5px;
+} 
+
+.inputs {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 0,
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 23px;
+    font-style: italic;
+    position: relative;
+    left: 205px;
+}
+
+.about, .contact {
+    margin: auto;
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    font-size: 50px;
+}
+
+.search-input, .title-text, .author-text, .language-text {
+    height: 26px;
+    padding-left: .5em; 
+}
+
+.sort-button, .add-button, .search-button {
+    border: none;
+    height:30px;
+    background-color: cornflowerblue;
+    width: 75px;
+}
+
+.sort-dd {
+    height: 31px;
+}
+
+.sign-out {
+    text-decoration: underline;
+    position: absolute;
+    right: 10px;
+}

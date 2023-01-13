@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Katrina's Library</title>
+  </head>
+  <body>
+    <header>
+      <a class="home" href="index.html"><strong>Home</strong></a>
+      <a href="html/about.html">About</a>
+      <a href="html/contact.html">Contact</a>
+      <a class="sign-out" href="html/register.html">Sign Out</a>
+    </header>
+    <section class="main">
+      <h1 class="library-name">Katrina's Library</h1>
+      <hr />
+      <section class="inputs">
+        <section class="new-book">
+          <h3>Add New Book</h3>
+          <input class="title-text" placeholder="Book Title" />
+          <input class="author-text" placeholder="Last Name, First Name" />
+          <input class="language-text" placeholder="Language" />
+          <button class="add-button">Add Book</button>
+        </section>
+        <section class="search-sort">
+          <input
+            type="search-input"
+            class="search-input"
+            placeholder="Search..."
+          />
+          <button class="search-button">Search</button>
+          <select name="sort-dd" class="sort-dd">
+            <option value="null">Sort By...</option>
+            <option value="az" class="az">A-Z</option>
+            <option value="za" class="za">Z-A</option>
+          </select>
+          <button class="sort-button">Sort</button>
+        </section>
+      </section>
+      <hr />
+      <section class="library-section">
+        <section class="libraries">
+          <h2>All Books</h2>
+          <section class="library"></section>
+        </section>
+        <section class="fav-section">
+          <h2>My Favorites</h2>
+          <section class="fav-count"></section>
+          <section class="favorites"></section>
+        </section>
+      </section>
+    </section>
+    <footer>
+      <p class="bye">Thanks for browsing!</p>
+    </footer>
+    <script src="js/book-data.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

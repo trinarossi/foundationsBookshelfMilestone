@@ -1,0 +1,119 @@
+body {
+    background-image: url("colorfulbooks.jpg");
+    background-repeat: repeat;
+    background-color: #cccccc;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: rgba(227, 202, 215, 0.9);
+    background-image: radial-gradient(circle, rgba(227,202,215,0.4) 0%, rgba(47,174,255,0.4) 66%, rgba(252,70,107,.4) 92%, rgba(252,70,107,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+}
+
+header {
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(100, 149, 237);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: solid black 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+footer {
+    height: 45px;
+    width: 100vw;
+    background-color: rgb(100, 149, 237);
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid black 2px;
+    position: fixed;
+    bottom: 0;
+    font-style: italic;
+}
+
+a {
+    padding: 2em;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor: not-allowed;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(252, 252, 255, 1);
+    height: 600px;
+    width: 700px;
+    position: relative;
+    top: 25%;
+    border-radius: 15px;
+
+}
+
+h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 25px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 20px;
+}
+
+.register {
+    border: solid cornflowerblue 2px;
+    width: 450px;
+    height: 400px;
+    padding: 0 2em 0 2em;
+    position: absolute;
+    bottom: 50px;
+}
+
+input {
+    height: 30px;
+    width: 442px;
+    /* background-color: rgba(227, 202, 215, 1); */
+    border: solid black 1.5px;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 2em;
+    height: 40px;
+    background-color: cornflowerblue;
+    border: none;
+    font-size: 18px;
+  }
+
+  .pass, .user {
+    font-size: 16px;
+    padding-left: .5em;
+  }
+
