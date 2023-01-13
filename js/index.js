@@ -64,6 +64,7 @@ const favCounter = (favBooks) => {
 const renderFavCounter = (books) => {
     const favNum = favCounter(favBooks);
     const counter = document.createElement('p');
+    counter.style.cssText = 'font-size: 18px; font-family: "Poppins"';
     counter.innerText = `Favorite Books: ${favNum}`;
     favCounterButton.replaceChildren(counter);
     return counter;
@@ -100,36 +101,48 @@ const createBookCommentSection = (book) => {
 
 const renderBook = (book) => {
     const { title, author, language} = book;
+    //entire card
     const bookCard = document.createElement('section');
     bookCard.className = 'card';
+    //first section- title and favButton
+    const bookCardSec1= document.createElement('section');
+    bookCardSec1.className = 'card-sec1';
     const bookTitle = document.createElement('h1');
-    bookTitle.style.cssText = 'font-size: 18px; max-width: 250px';
+    bookTitle.style.cssText = 'font-size: 18px; max-width: 300px; white-space: nowrap; overflow: clip; text-overflow: ellipsis; margin-bottom: 0;';
     bookTitle.innerText = `Title: ${title}`;
+    bookCardSec1.append(bookTitle)
+    //second section- author and language
+    const bookCardSec2 = document.createElement('section');
+    bookCardSec2.className = 'card-sec2';
     const bookAuthor = document.createElement('p');
     bookAuthor.innerText = `Author: ${author}`;
     const bookLan = document.createElement('p');
     bookLan.innerText = `Language: ${language}`;
-    bookCard.append(bookTitle, bookAuthor, bookLan);
-
+    bookCardSec2.append(bookAuthor, bookLan)
+    
     const favButton = document.createElement('button');
     //<span class="material-symbols-outlined">favorite</span>
-    favButton.innerHTML = '<span class="material-symbols-outlined">favorite</span>';
+    favButton.innerHTML = '<span class="material-symbols-outlined fav-outline">favorite</span>';
+    favButton.className = 'fav-button';
     const unFavButton = document.createElement('button');
-    unFavButton.innerHTML = '<span class="material-symbols-outlined">heart_broken</span>'
+    unFavButton.innerHTML = '<span class="material-symbols-outlined unfav-outline">heart_broken</span>'
+    unFavButton.className = 'unfav-button';
     favButton.addEventListener('click', () => favorite(book));
     unFavButton.addEventListener('click', () => unfavorite(book));
     const bookToAdd = (favBooks.includes(book)) ? unFavButton : favButton;
-    bookCard.append(bookToAdd);
+    bookCardSec1.append(bookToAdd);
 
+    //third section- comment button
     const commentBtn = document.createElement('button');
     commentBtn.textContent = "Comment";
+    commentBtn.className = 'comment-button';
     commentBtn.addEventListener('click', () => {
         const commentSection = createBookCommentSection(book);
         bookCard.append(commentSection);
         return commentSection;
-        //commentSection is undefined
     })
-    bookCard.append(commentBtn);
+
+    bookCard.append(bookCardSec1, bookCardSec2, commentBtn);
 
 
     return bookCard;
@@ -143,8 +156,5 @@ const renderBooks = (books, location) => {
 renderBooks(bookList, library);
 
 //what to work on tomorrow:
-//fixing the spacing of the bookCard
-//fav/unfav icon stylization
 //media query
 //comment feature
-//new fonts

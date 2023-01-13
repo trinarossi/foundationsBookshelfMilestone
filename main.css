@@ -6,6 +6,7 @@
     background-color: rgba(227, 202, 215, 1);
     border: dotted white 2px;
     padding-top: 1em;
+    margin-bottom: 5em;
     width: 750px;
 
 }
@@ -27,15 +28,16 @@
 .library {
     display: grid;
     grid-template-columns: auto auto;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 .library-name {
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     padding: em;
     margin-top: 2em;
     margin-bottom:1em;
+    font-family: 'Slackey';
 }
 
 .search-sort {
@@ -87,11 +89,12 @@ footer {
     position: fixed;
     bottom: 0;
     font-style: italic;
+    font-family: 'Poppins';
 }
 
 a {
     padding: 2em;
-    font-family: sans-serif;
+    font-family: 'Poppins';
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -126,37 +129,43 @@ hr {
 
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 0,
-  }
-
   .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Poppins';
+    height: 300px;
+    margin-bottom: 1em;
   }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: cornflowerblue;
+  }
+
+.fav-button, .unfav-button {
+    border: none;
+    background-color: rgba(0,0,0,0);
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 28px;
+    font-family: 'Slackey';
 }
 
 h3 {
     font-size: 23px;
-    font-style: italic;
     position: relative;
-    left: 205px;
+    left: 198px;
+    font-family: 'Poppins';
+}
+
+p {
+    max-width: 250px;
 }
 
 .about, .contact {
@@ -165,6 +174,7 @@ h3 {
     top: 45%;
     left: 42%;
     font-size: 50px;
+    font-family: 'Slackey'
 }
 
 .search-input, .title-text, .author-text, .language-text {
@@ -187,4 +197,16 @@ h3 {
     text-decoration: underline;
     position: absolute;
     right: 10px;
+}
+
+.comment-button {
+    width: 80px;
+    height: 35px;
+}
+
+.card-sec1 {
+    display: flex;
+    align-items:baseline;
+    padding-left:1em;
+
 }
