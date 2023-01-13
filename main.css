@@ -1,25 +1,27 @@
 .libraries {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
     left: -45px;
     background-color: rgba(227, 202, 215, 1);
     border: dotted white 2px;
     padding-top: 1em;
     margin-bottom: 5em;
-    width: 750px;
+    width: 800px;
 
 }
 
 .fav-section {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     border: dotted white 2px;
     width: 350px;
     height: 100%;
     padding: 1em;
-    padding-left: 3em;
     background-color: rgba(227, 202, 215, 1);
     position:relative;
     right: -45px;
@@ -118,7 +120,7 @@ a {
 }
 
 hr {
-    width: 1265px;
+    width: 1275px;
     border-top: solid white .5px;
 } 
 
@@ -135,7 +137,6 @@ hr {
     align-items: center;
     font-family: 'Poppins';
     height: 300px;
-    margin-bottom: 1em;
   }
 
 .material-symbols-outlined {
